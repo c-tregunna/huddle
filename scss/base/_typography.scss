@@ -3,10 +3,19 @@ h1 {
   font-weight: 400;
   text-align: center;
   font-size: 1.5em;
-  margin-bottom: 0px;
+  margin: 70px 0px 0px;
 }
 
 p {
   text-align: center;
   font-weight: 200;
+}
+
+a:link,
+a:visited {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
