@@ -414,8 +414,7 @@ ul {
 }
 
 body {
-  width: 90%;
-  margin: auto;
+  padding: 30px;
   font-size: 1em;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -423,6 +422,15 @@ body {
   background-color: #674baf;
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .page-wrap {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+  }
 }
 
 header {
@@ -441,15 +449,25 @@ main {
   width: 90%;
   margin: auto;
 }
+@media (min-width: 768px) {
+  main {
+    margin-top: 60px;
+  }
+}
 
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 50%;
   margin: 40px auto;
   height: 70px;
+}
+@media (min-width: 768px) {
+  .social {
+    margin-right: 0px;
+  }
 }
 
 .btn {
@@ -463,6 +481,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn:hover {
+  background-color: #e882e8;
+  color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  footer {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -501,12 +530,22 @@ a:visited:hover {
   width: 30px;
   border: 1px solid #fff;
   border-radius: 50%;
+  margin: 0px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.social_contain:hover {
+  border-color: #e882e8;
+  transition: border-color 0.5s ease;
+}
 .social_contain i {
   font-size: 0.75em;
+  padding: 20px;
+}
+.social_contain i:hover {
+  color: #e882e8;
+  transition: color 0.5s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */

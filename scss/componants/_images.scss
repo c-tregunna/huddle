@@ -11,8 +11,18 @@
   width: 30px;
   border: 1px solid $white;
   border-radius: 50%;
+  margin: 0px 10px;
   @include flex($align: center, $just: center);
+  &:hover {
+    border-color: $magenta;
+    transition: border-color 0.5s ease;
+  }
   & i {
     font-size: 0.75em;
+    padding: 20px;
+    &:hover {
+      color: $magenta;
+      transition: color 0.5s ease;
+    }
   }
 }
