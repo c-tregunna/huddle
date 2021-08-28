@@ -14,9 +14,15 @@ body {
 }
 
 .page-wrap {
-  @include medq($break-l) {
+  @include medqL($break-l) {
     @include flex($dir: row);
     background-size: cover;
+  }
+}
+
+.head-wrap {
+  @include medqL($break-l) {
+    flex-basis: 100%;
   }
 }
 
@@ -31,11 +37,6 @@ header {
 
 main {
   @include flex($dir: column);
-  width: 90%;
-  margin: auto;
-  @include medq($break-l) {
-    margin-top: 60px;
-  }
 }
 
 .social {
@@ -43,7 +44,7 @@ main {
   width: 50%;
   margin: 40px auto;
   height: 70px;
-  @include medq($break-l) {
+  @include medqL($break-l) {
     margin-right: 0px;
   }
 }
@@ -65,7 +66,7 @@ main {
 }
 
 footer {
-  @include medq($break-l) {
+  @include medqL($break-l) {
     width: 100%;
   }
 }
