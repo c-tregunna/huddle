@@ -71,8 +71,6 @@ main {
   }
 }
 
-footer {
-  @include medqL($break-l) {
-    width: 100%;
-  }
+.attribution {
+  text-align: center;
 }

@@ -4,6 +4,11 @@ h1 {
   text-align: center;
   font-size: 1.5em;
   margin: 70px 0px 0px;
+  @include medqL($break-l) {
+    font-size: 2.25em;
+    text-align: left;
+    margin-top: 30px;
+  }
 }
 
 p {
