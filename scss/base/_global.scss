@@ -17,6 +17,8 @@ body {
   @include medqL($break-l) {
     @include flex($dir: row);
     background-size: cover;
+    max-width: 1100px;
+    margin: auto;
   }
 }
 
@@ -29,6 +31,10 @@ body {
 header {
   @include flex($align: flex-start);
   padding: 30px 0px;
+  @include medqL($break-l) {
+    max-width: 1100px;
+    margin: auto;
+  }
 }
 
 .main_img-contain {
