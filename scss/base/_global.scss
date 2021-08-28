@@ -11,6 +11,9 @@ body {
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  @include medqL($break-l) {
+    background-size: cover;
+  }
 }
 
 .page-wrap {

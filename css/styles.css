@@ -424,6 +424,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (min-width: 1024px) {
+  body {
+    background-size: cover;
+  }
+}
 
 @media (min-width: 1024px) {
   .page-wrap {
