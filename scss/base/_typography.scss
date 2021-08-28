@@ -9,6 +9,9 @@ h1 {
 p {
   text-align: center;
   font-weight: 200;
+  @include medqL($break-l) {
+    text-align: left;
+  }
 }
 
 a:link,

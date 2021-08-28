@@ -37,6 +37,9 @@ header {
 
 main {
   @include flex($dir: column);
+  @include medqL($break-l) {
+    @include flex($align: flex-start);
+  }
 }
 
 .social {
@@ -58,6 +61,9 @@ main {
   border-radius: 20px;
   box-shadow: 0px 3px 3px darken($violet, 10%);
   @include flex($align: center, $just: center);
+  @include medqL($break-l) {
+    margin: 0;
+  }
   &:hover {
     background-color: $magenta;
     color: $white;
